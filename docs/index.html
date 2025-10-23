@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eden Malka – Loan Approval Prediction System</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 40px; background-color: #f9fafc; color: #333; line-height: 1.7; }
+    h1 { color: #0d6efd; margin-bottom: 20px; font-weight: 600; }
+    h2 { color: #0d6efd; margin-top: 40px; font-size: 1.4rem; }
+    .btn-custom { background-color: #0d6efd; color: white; border-radius: 8px; padding: 10px 20px; text-decoration: none; display: inline-block; margin: 8px 0; }
+    .btn-custom:hover { background-color: #0b5ed7; }
+    .back-link { display: inline-block; margin-top: 40px; font-size: 15px; text-decoration: none; color: #6c757d; }
+    .back-link:hover { text-decoration: underline; color: #0d6efd; }
+    .content { max-width: 850px; margin: 0 auto; text-align: left; }
+  </style>
+</head>
+
+<body>
+  <div class="container content">
+    <h1>Loan Approval Prediction System – Machine Learning Project</h1>
+
+    <p>
+      This project presents a data-driven approach to predicting loan approval outcomes using real-world financial data.  
+      The goal was to help financial institutions identify which applicants are likely to repay their loans and which may default,  
+      by combining statistical reasoning with modern machine learning methods.
+    </p>
+
+    <p>
+      I worked with a dataset of 1,000 loan applications containing 14 features, including loan amount, annual income, interest rate, employment length, and home ownership.  
+      The outcome variable, <em>loan_status</em>, was recoded into a binary form: 0 for fully repaid loans and 1 for defaulted loans.
+    </p>
+
+    <p>
+      After cleaning the data and handling missing values, I explored the relationships between financial indicators such as interest rate, debt-to-income ratio (DTI), and income levels.  
+      The analysis revealed clear trends — higher interest rates and higher DTI were both linked to greater default risk, while home ownership appeared to slightly reduce risk.
+    </p>
+
+    <p>
+      For the modeling phase, I compared several machine learning algorithms, including Logistic Regression, Random Forest, Gradient Boosting, k-Nearest Neighbors (kNN), Naive Bayes, and a simple Neural Network (MLP).  
+      Each model was evaluated using 10-fold stratified cross-validation to ensure reliable and unbiased performance estimates.
+    </p>
+
+    <p>
+      Among these, <strong>Logistic Regression</strong> achieved the best balance between predictive accuracy and interpretability —  
+      reaching an AUC of <strong>0.931</strong> and an overall accuracy of <strong>0.889</strong>, while maintaining high recall (<strong>0.949</strong>) and precision (<strong>0.917</strong>).  
+      This means the model not only predicts accurately but also provides interpretable insights that can be trusted by loan officers and regulators.
+    </p>
+
+    <p>
+      The final outcome is a transparent and effective <strong>Loan Recommendation System</strong> capable of helping banks make better, data-driven credit decisions.
+    </p>
+
+    <hr style="margin:40px 0;">
+    <h2>Project Files</h2>
+    <p><a class="btn-custom" href="ML_Report.pdf" target="_blank">Full Report – Data Analysis & Model Evaluation</a></p>
+    <p><a class="btn-custom" href="ML_Results_Orange.html" target="_blank">Machine Learning Pipeline – Orange Results</a></p>
+
+    <a class="back-link" href="https://edenmalka123.github.io/University-Projects/">&larr; Back to University Projects</a>
+  </div>
+</body>
+</html>
